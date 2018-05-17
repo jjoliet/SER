@@ -1,0 +1,58 @@
+<HTML>
+<Head><Title>SER422 Form Lab1</Title></Head>
+<body>
+	<h2 align="center">A Sample Form</h2>
+	<div>
+	<form action="./tasks" Method="POST" style="float: left">
+		<left>
+			<h2>Create Task</h2>
+			To-Do task:
+			<input type="text" name="task"><br>
+			Description:
+			<input type="text" name="description" cols="60"> <br>
+			<select name="days" size="7" multiple>
+				<option value="Sunday">Sunday</option>
+				<option value="Monday">Monday</option>
+				<option value="Tuesday">Tuesday</option>
+				<option value="Wednesday">Wednesday</option>
+				<option value="Thursday">Thursday</option>
+				<option value="Friday">Friday</option>
+				<option value="Saturday">Saturday</option>
+			</select>
+				<br>Use Ctrl(Windows) or Command (Mac) to select multiple days.<br>
+				Time Estimate:
+				<input type="text" name="estimate"><br>
+				Priority:
+				<input type="radio" name="priority" value="High" checked> High
+  				<input type="radio" name="priority" value="Normal"checked> Normal
+  				<input type="radio" name="priority" value="Low"> Low<br>
+				<input type="submit" value="Submit"> <!-- Press this to submit form -->
+			
+			</left>
+		</form>
+		<form action="./tasks" Method="GET" style="float: right">
+		<right>
+			<h2>Find Task</h2>
+			To-Do task:
+			<input type="text" name="task"><br>
+			Description:
+			<input type="text" name="description" cols="60"> <br>
+			<select name="days" size="7" multiple>
+				<option value="7">Sunday</option>
+				<option value="1">Monday</option>
+				<option value="2">Tuesday</option>
+				<option value="3">Wednesday</option>
+				<option value="4">Thursday</option>
+				<option value="5">Friday</option>
+				<option value="6">Saturday</option>
+			</select>
+				<br>Use Ctrl(Windows) or Command (Mac) to select multiple days.<br>
+				Time Estimate:
+				<input type="text" name="estimate"><br>
+				<input type="submit" value="Submit"> <!-- Press this to submit form -->
+			
+			</right>
+		</form>
+		</div>
+	</body>
+</HTML>
